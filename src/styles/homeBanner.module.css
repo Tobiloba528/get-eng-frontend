@@ -1,0 +1,265 @@
+.home_banner {
+  position: relative;
+  background: rgb(6, 107, 217);
+  background: linear-gradient(
+    90deg,
+    rgba(6, 107, 217, 1) 0%,
+    rgba(3, 34, 130, 1) 86%
+  );
+  color: white;
+  padding: 0;
+  margin: 0;
+  min-height: 90vh;
+}
+
+.nav {
+  min-height: 10vh;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgb(6, 107, 217);
+  background: linear-gradient(
+    90deg,
+    rgba(6, 107, 217, 1) 0%,
+    rgba(3, 34, 130, 1) 86%
+  );
+  color: white;
+}
+
+.nav_inner {
+  width: 85%;
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo h3 {
+  font-family: Roboto;
+    color: white;
+}
+
+.logo img {
+  padding-right: 5px;
+  width: 25px;
+  height: 25px;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+}
+
+.link {
+  padding-right: 30px;
+  font-family: "Playfair Display", serif;
+  font-size: 15px;
+  text-decoration: none;
+  color: white
+}
+
+.burger {
+  display: none;
+}
+
+.smallNav {
+  display: none;
+}
+
+.banner {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  min-height: 80vh;
+}
+
+.banner h1 {
+  font-size: 40px;
+}
+
+.banner p {
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+/* .lottie {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .lottie_item {
+    width: 50%;
+  } */
+
+.custom_shape_divider_bottom_1634473055 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom_shape_divider_bottom_1634473055 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.shape_fill {
+  fill: #ffffff;
+}
+
+@media screen and (max-width: 550px) {
+  .banner h1 {
+    font-size: 30px;
+  }
+
+  .banner p {
+    font-size: 15px;
+    margin-top: 5px;
+  }
+
+  /* .lottie {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .lottie_item {
+    width: 100%;
+  } */
+}
+
+@media screen and (max-width: 800px) {
+  .nav_inner {
+    width: 90%;
+  }
+
+  .list {
+    display: none;
+  }
+
+  .burger {
+    position: relative;
+    display: block;
+    cursor: pointer;
+  }
+
+  .burger div {
+    padding: 1.3px 13px;
+    background: rgb(253, 253, 253);
+    margin: 0.4rem 0rem;
+    display: block;
+    transition: all 0.5s ease;
+  }
+
+  .toggle div:nth-child(1) {
+    transform: rotateZ(40deg) translateY(400%);
+    background: gb(78, 78, 78);
+  }
+  .toggle div:nth-child(2) {
+    opacity: 0;
+  }
+  .toggle div:nth-child(3) {
+    transform: rotateZ(-40deg) translateY(-400%);
+    background: gb(78, 78, 78);
+  }
+
+  .smallNav {
+    width: 0;
+    height: 0;
+    background: #f9971c;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    align-items: center;
+    position: fixed;
+    margin: 0;
+    top: -100vh;
+    transition: transform 1s ease;
+    overflow: hidden;
+    /* padding-top: 200px; */
+    z-index: 10;
+  }
+
+  .navOpen {
+    transform: translateY(100vh);
+  }
+
+  .mobileTop {
+    width: 90%;
+    margin: 0 auto;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: Martel;
+  }
+
+  .mobileTopLink {
+    text-decoration: none;
+    color: white;
+  }
+
+  .mobileTopLink img {
+    width: 50px;
+    margin-right: 10px;
+  }
+
+  .close {
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .mobileList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40vh;
+    padding-top: 100px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .smallLink {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-family: Martel;
+    font-weight: bolder;
+  }
+
+  .smallLink:hover,
+  .mobileTopLink:hover {
+    color: rgb(201, 201, 201);
+  }
+
+  .smallLink:active {
+    color: black;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .banner {
+    padding-top: 30px;
+    width: 95%;
+    display: block;
+    text-align: center;
+  }
+
+  .banner_content {
+    padding-bottom: 50px;
+  }
+}

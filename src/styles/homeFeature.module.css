@@ -1,0 +1,43 @@
+.container {
+  min-height: 50vh;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    353deg,
+    rgba(255, 255, 255, 1) 60%,
+    rgba(246, 247, 251, 1) 60%
+  );
+  text-align: center;
+  padding: 40px 0
+}
+
+.container h3{
+    color: rgba(3, 34, 130, 1);
+}
+
+
+.inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    padding-top: 40px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1000px) {
+    .inner{
+        width: 80%;
+    }
+} 
+
+@media screen and (max-width: 750px) {
+    .inner{
+        width: 90%;
+        display: block;
+    }
+    .container p{
+        font-size: 12px;
+        width: 80%;
+        margin: 0 auto;
+    }
+} 
