@@ -24,7 +24,7 @@ const NavBar = () => {
         </NavLink>
         <ul className={styles.list}>
           <li>
-            <Link to="/login" className={styles.link}>
+            <Link to="/jobs" className={styles.link}>
               Jobs
             </Link>
           </li>

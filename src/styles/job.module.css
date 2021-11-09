@@ -1,0 +1,174 @@
+.job_container {
+  min-height: 80vh;
+  width: 100%;
+  padding: 70px 0;
+}
+
+.job_container h1 {
+  text-align: center;
+  margin-bottom: 13px;
+}
+
+.job_inner {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.job_first {
+  width: 23%;
+  font-family: Playfair;
+}
+
+.filters_container,
+.processes {
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 5px;
+  padding: 30px 20px;
+}
+
+.processes {
+  margin-top: 40px;
+}
+
+.filter_header,
+.processes_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.filter_btn_container {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+}
+
+.filter_btn {
+  border: none;
+  padding: 15px 20px;
+  color: white;
+  background: rgb(247, 39, 39);
+  border-radius: 5px;
+}
+
+.filters {
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.process {
+  text-align: center;
+  line-height: 25px;
+  margin-bottom: 30px;
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 5px;
+  padding: 20px 30px;
+}
+
+.job_second {
+  width: 75%;
+}
+
+.job_list {
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Job Item */
+.job_item {
+  display: flex;
+  border-radius: 5px;
+  padding: 40px;
+  margin: 0;
+}
+
+.job_item:hover {
+  border: 2px solid rgb(231, 230, 230);
+}
+
+.job_item_img {
+  width: 80px;
+  height: 80px;
+  border: 2px solid rgb(233, 232, 232);
+  border-radius: 5px;
+}
+
+.job_item_content {
+  padding-left: 20px;
+}
+
+.job_item_title {
+  color: rgba(3, 34, 130, 1);
+  margin-bottom: 25px;
+}
+
+.job_item_cost {
+  color: rgb(248, 63, 63);
+  margin-bottom: 25px;
+}
+
+.job_item_address,
+.job_item_stack {
+  display: flex;
+  align-items: center;
+  color: rgb(90, 88, 88);
+  margin-bottom: 25px;
+}
+
+.job_item_address p {
+  padding-left: 5px;
+  font-family: Playfair;
+}
+
+.job_item_stack {
+  display: flex;
+  align-items: center;
+  color: rgb(90, 88, 88);
+}
+
+.job_item_stack p {
+  padding-right: 5px;
+  font-family: Playfair;
+}
+
+@media screen and (max-width: 1100px) {
+  .job_inner {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .job_inner {
+    display: block;
+  }
+  .job_first,
+  .job_second {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .job_item {
+    display: block;
+    text-align: center;
+  }
+
+  .job_item_stack,
+  .job_item_address {
+    justify-content: center;
+  }
+
+  .processes{
+      display: none;
+  }
+}

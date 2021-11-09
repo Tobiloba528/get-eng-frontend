@@ -1,0 +1,42 @@
+
+
+
+/* Auth Input */
+.auth_input_container {
+    display: flex;
+    margin-bottom: 40px;
+    border: 2px rgb(235, 235, 235) solid;
+    border-radius: 5px;
+    padding: 18px;
+
+  }
+
+  .auth_icon {
+    width: 10%;
+    text-align: center;
+  }
+
+  .auth_input_field {
+    width: 90%;
+    outline: none;
+    background: transparent;
+    border: none;
+  }
+
+  /* select Input */
+
+  .select_input_container{
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid rgb(192, 192, 192);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-family: Playfair;
+  }
+
+  .select_input_container:focus{
+    outline: none;
+  }
+  
+  
