@@ -3,6 +3,7 @@ import { BiFilterAlt } from "react-icons/all";
 import JobItem from "../components/JobItem";
 import styles from "../styles/job.module.css";
 import SelectInput from "../components/common/SelectInput";
+import ScrollTop from '../components/ScrollTop';
 
 const JobsScreen = () => {
   return (
@@ -52,6 +53,7 @@ const JobsScreen = () => {
           </div>
         </div>
       </div>
+      <ScrollTop />
     </div>
   );
 };

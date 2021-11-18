@@ -1,5 +1,6 @@
 import React from "react";
 import NavBar from "../components/NavBar";
+import { useHistory } from "react-router-dom";
 import {
   AiOutlineUser,
   IoMdTimer,
@@ -11,8 +12,10 @@ import {
 } from "react-icons/all";
 import Footer from "../components/Footer";
 import styles from "../styles/dashboard.module.css";
+import ScrollTop from "../components/ScrollTop";
 
 const Dashboard = () => {
+  const history = useHistory();
   return (
     <>
       <NavBar />
@@ -23,7 +26,10 @@ const Dashboard = () => {
         </div>
         <div className={styles.row_container}>
           <div className={styles.row}>
-            <div className={styles.row_item}>
+            <div
+              className={styles.row_item}
+              onClick={() => history.push("/profile")}
+            >
               <AiOutlineUser className={styles.icon} />
               <p>Profile</p>
             </div>
@@ -52,6 +58,7 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
+      <ScrollTop />
       <Footer />
     </>
   );

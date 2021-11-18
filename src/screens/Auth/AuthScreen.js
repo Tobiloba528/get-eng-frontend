@@ -6,12 +6,16 @@ import HomePage from "./HomePage";
 import LoginScreen from "./LoginScreen";
 import SignupScreen from "./SignupScreen";
 import JobsScreen from "../JobsScreen";
+import ForgotPassword from './ForgotPassword';
 
 const AuthScreen = () => {
   return (
     <>
       <NavBar />
       <Switch>
+      <Route path="/forgot_password">
+          <ForgotPassword />
+        </Route>
         <Route path="/jobs">
           <JobsScreen />
         </Route>

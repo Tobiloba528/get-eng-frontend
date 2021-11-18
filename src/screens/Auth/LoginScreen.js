@@ -4,7 +4,7 @@ import AuthInput from "../../components/common/AuthInput";
 import { AiOutlineUser, HiOutlineKey } from "react-icons/all";
 import input_styles from "../../styles/input.module.css";
 import { Link } from "react-router-dom";
-import ScrollTop from '../../components/ScrollTop';
+import ScrollTop from "../../components/ScrollTop";
 
 const LoginScreen = () => {
   const [data, setData] = useState({ email: "", password: "" });
@@ -41,7 +41,7 @@ const LoginScreen = () => {
           <HiOutlineKey className={input_styles.auth_icon} />
         </AuthInput>
         <div className={styles.link_container}>
-          <Link to="/">Forgot Password?</Link>
+          <Link to="/forgot_password">Forgot Password?</Link>
         </div>
         <button className={styles.btn2}>Login</button>
         <div className={styles.link_container}>
