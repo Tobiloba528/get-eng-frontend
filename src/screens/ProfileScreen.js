@@ -5,9 +5,9 @@ import NavBar from "../components/NavBar";
 const ProfileScreen = () => {
   return (
     <>
-      <NavBar />
+      {/* <NavBar /> */}
       <p>Profile Screen</p>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

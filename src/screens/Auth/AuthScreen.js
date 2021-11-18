@@ -25,9 +25,9 @@ const AuthScreen = () => {
         <Route path="/login">
           <LoginScreen />
         </Route>
-        <Route path="/">
+        {/* <Route path="/">
           <HomePage />
-        </Route>
+        </Route> */}
       </Switch>
       <Footer />
     </>

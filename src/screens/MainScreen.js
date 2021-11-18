@@ -7,9 +7,9 @@ import { Route, Switch } from "react-router-dom";
 const MainScreen = () => {
   return (
     <div>
-      <NavBar />
+      {/* <NavBar /> */}
       <Dashboard />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
