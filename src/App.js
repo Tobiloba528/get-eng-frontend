@@ -35,9 +35,7 @@ function App() {
         <Route path="/login">
           <LoginScreen />
         </Route>
-        <Route path="/">
-          <HomePage />
-        </Route>
+        <Route path="/" component={HomePage} />
       </Switch>
       <Footer />
     </>
