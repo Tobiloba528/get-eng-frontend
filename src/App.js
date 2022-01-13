@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <NavBar />
-      {/* <Switch>
+      <Switch>
         <Route path="/profile">
           <ProfileScreen />
         </Route>
@@ -35,10 +35,10 @@ function App() {
         <Route path="/login">
           <LoginScreen />
         </Route>
-        <Route path="/"> */}
+        <Route path="/">
           <HomePage />
-        {/* </Route> */}
-      {/* </Switch> */}
+        </Route>
+      </Switch>
       <Footer />
     </>
   );
